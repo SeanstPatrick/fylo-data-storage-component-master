@@ -1,0 +1,185 @@
+body  
+  {
+    width: 1440px;
+    background-color:  hsl(229, 57%, 11%);
+    Font-size: 14px;
+    font-family: 'Raleway', sans-serif;;
+    background-image: url('images/bg-desktop.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+  }
+    .main 
+    { 
+      position: relative;
+      left: 400px;
+      top: 300px; 
+      float : left;            
+    } 
+
+    .icon 
+    {    
+      display: inline-block;       
+      width: 200px; 
+      height:70px;          
+      position: relative; 
+      padding: 50px 10px 10px;
+      border-radius: 5px 60px 5px 5px;
+      background-color: hsl(228, 56%, 26%);
+    } 
+
+    .data-storage 
+    {
+      display: inline-block; 
+      width: 350px;
+      height:80px;  
+      position: relative;
+      align-content: center;
+      top:  12px;
+      left: 10px;           
+      border-radius: 5px;
+      background-color: hsl(228, 56%, 26%);
+      padding: 10px;
+      
+    }
+    .i-con 
+    { 
+      background-color:hsl(229, 57%, 11%);
+      padding: 8px 8px 8px 8px;
+      border-radius: 5px;
+      margin: 2px;
+    } 
+    .grad1 
+    {                
+      position: relative;
+      border-radius: 5px;            
+      height: 9px;
+      top:19px;
+      left:25px;
+      width:250px;
+      background-size: 280px 20px;
+      background-repeat: no-repeat;
+      background-color: hsl(229, 57%, 11%);
+      background-image: linear-gradient(to right, hsl(6, 100%, 80%) , hsl(335, 100%, 65%)); 
+      }
+
+    .grad2 
+    {                
+      position: relative;
+      border-radius: 5px;            
+      height: 12px;
+      width:300px;
+      top:30px;
+      left:25px;
+      background-size: 280px 20px;
+      background-repeat: no-repeat;
+      background-color: hsl(229, 57%, 11%);
+        
+      }
+
+    .grad3 
+    {                
+      display: inline-block;
+      position: relative;
+      border-radius: 5px;            
+      height: 8px;
+      width:10px;
+      left:270px;
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      background-color:white;
+        
+      }
+
+    .range 
+    {
+      display: inline-block;
+      position: relative;
+      top: -15px;
+      left:20px;
+      width: 300px;           
+      height: 5px;
+      color: #FFFFFF; 
+      padding-left: 5px;             
+    } 
+
+    .usage 
+    { 
+      color:aliceblue;
+      font-size: 10px;  
+      position: relative;
+      top: 15px;  
+      left:25px;               
+    }
+    .start
+    { 
+      float: left;
+      font-size: 7px;                             
+    }
+    .end 
+    { 
+      float: right; font-size: 7px; 
+    }
+
+    .left 
+    {
+      display: inline-block;
+      position: relative;
+      top: -60px;
+      left: 230px;
+      border-radius: 5px 5px 1px 5px;
+      background: #FFFFFF;
+      color: #000000;
+      text-align: center;
+      width: 85px;
+      height: 33px;
+      padding: 0px;
+      }
+      .left:after 
+      {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 0;
+        z-index: 1;
+        border-style: solid;
+        border-width: 0 15px 20px 0;
+        border-color: transparent #FFFFFF transparent transparent;
+        left: 95%;
+        margin-left: -11px;
+      }
+      .lrg-icon
+      {
+        display: inline-block;
+        position: relative;
+        top: -15px;
+        left: 15px;
+      }
+
+      .icon-cntr
+      {
+        display: inline-block;
+        position: relative;
+        left: 15px;
+      }
+    .value
+      {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+      }
+
+    .gb
+      {
+        font-family: 'Raleway', sans-serif;
+        font-size: 6px;
+      }
+      .gb1
+      {
+        font-family: 'Raleway', sans-serif;
+        font-weight:bold;
+        font-size: 12px;
+      }
+
+    .attribution { font-size: 11px; text-align: center; position: relative; display: inline-block; bottom: -250px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
