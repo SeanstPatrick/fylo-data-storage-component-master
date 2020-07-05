@@ -1,14 +1,21 @@
+@font-face
+{
+    src: url(../fonts/Raleway-Regular.ttf);
+    font-family: raleway;
+}
+
 body  
   {
-    width: 1440px;
+    
     background-color:  hsl(229, 57%, 11%);
+    font-family: raleway;
     Font-size: 14px;
-    font-family: 'Raleway', sans-serif;;
-    background-image: url('images/bg-desktop.png');
+    background-image: url('../images/bg-desktop.png');
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;    
     background-position: center bottom;
-  }
+  } 
+
     .main 
     { 
       position: relative;
@@ -20,7 +27,7 @@ body
     .icon 
     {    
       display: inline-block;       
-      width: 200px; 
+      width: 30%; 
       height:70px;          
       position: relative; 
       padding: 50px 10px 10px;
@@ -31,7 +38,7 @@ body
     .data-storage 
     {
       display: inline-block; 
-      width: 350px;
+      width: 52%;
       height:80px;  
       position: relative;
       align-content: center;
@@ -48,7 +55,9 @@ body
       padding: 8px 8px 8px 8px;
       border-radius: 5px;
       margin: 2px;
+      height: 15px;
     } 
+    
     .grad1 
     {                
       position: relative;
@@ -135,7 +144,7 @@ body
       height: 33px;
       padding: 0px;
       }
-      .left:after 
+      .left::after 
       {
         content: '';
         position: absolute;
@@ -156,7 +165,7 @@ body
         left: 15px;
       }
 
-      .icon-cntr
+    .icon-cntr
       {
         display: inline-block;
         position: relative;
@@ -164,22 +173,121 @@ body
       }
     .value
       {
-        font-family: 'Raleway', sans-serif;
+        font-family: raleway;
         font-weight: 600;
         font-size: 20px;
       }
 
     .gb
       {
-        font-family: 'Raleway', sans-serif;
+        font-family: raleway;
         font-size: 6px;
       }
       .gb1
       {
-        font-family: 'Raleway', sans-serif;
+        font-family: Raleway;
         font-weight:bold;
         font-size: 12px;
       }
+      .logo {  width: 60%; }
 
-    .attribution { font-size: 11px; text-align: center; position: relative; display: inline-block; bottom: -250px; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    /*.attribution { font-size: 11px; text-align: center; position: relative; display: inline-block; bottom: -250px; }
+    .attribution a { color: hsl(228, 45%, 44%); }*/
+
+      @media screen and (max-width:375px)
+    {
+        /* For mobile phones: */
+
+       body 
+        {
+            overflow-x: hidden;
+            width:100%  !important;
+            background-image: url('../images/bg-mobile.png');
+        }         
+       
+        .main 
+        { 
+            display: flex;
+            flex-flow: row wrap;
+            align-content: center;
+            justify-content: space-evenly;
+            width: auto !important;
+            left: 0px;       
+        } 
+
+        .icon 
+        { 
+            width: 270px !important; 
+            height: 100px;
+            top:-200px; 
+            left:-5px;           
+        } 
+        
+        .data-storage 
+        { 
+            width: 270px !important; position: relative;
+            top:-190px;  
+            left:-5px;
+        }         
+        .left 
+        {
+            top:50px !important;
+            left:50px !important;
+            width: 135px;
+            height: 60px;
+            border-radius: 5px 5px 5px 5px;
+        }
+        .lrg-icon
+        {
+          top: -15px;
+          left: 65px;
+          width: 150px;
+        }
+        .icon-cntr
+        {
+            display: inline-block;
+            position: relative;
+            left: 75px !important;
+            
+        }
+
+        .logo {  width: 100%; }
+        ::after {display:none !important;}
+
+        .grad1 
+        {  
+            left:0px;
+            width: 200px;
+        }
+        .grad2 
+        {  
+            left:0px;
+            width:250px;
+        }
+        .grad3
+        {  
+            left:192px;
+            top:-20px;
+        }
+
+        .range
+        {
+            left: 15px;
+            width: 200px;
+            top: -40px;
+        }  
+
+        .gb 
+        {
+          font-size: 10px;
+        }
+
+        .value
+        {
+            font-family: raleway;
+            font-weight: 600;
+            font-size: 40px;
+        }     
+           
+    }
+    
